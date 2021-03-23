@@ -17,9 +17,13 @@ function Details({ match }) {
         {isPending && <Loading />}
         {error && <Error />}
         {countries &&
-          countries.map((country) => (
-            <div className="row">
-              <img src={country.flag} style={{ height: 200, width: "auto" }} />
+          countries.map((country, index) => (
+            <div className="row" key={index}>
+              <img
+                src={country.flag}
+                style={{ height: 200, width: "auto" }}
+                alt={country.name}
+              />
               <div className="m-3">
                 <h2>country : {country.name}</h2>
                 <h2>Continent : {country.region}</h2>
