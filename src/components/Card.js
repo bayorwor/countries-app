@@ -9,7 +9,7 @@ function Card({ name, img, population }) {
         style={{ height: "10rem", width: "18rem" }}
       />
       <div className="card-body">
-        <Link to={`/details/${name}`}>
+        <Link to={`/details/${name}`} className="nav-link">
           <h4>{name}</h4>
           <h5>{population}</h5>
         </Link>

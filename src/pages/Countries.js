@@ -2,6 +2,7 @@ import useCountries from "../hooks/useCountries";
 import Card from "../components/Card";
 import Loading from "../components/Loading";
 import Error from "../components/Error";
+import { numberWithCommas } from "../utils/numbersComma";
 
 function Countries() {
   const url = "https://restcountries.eu/rest/v2/all";
@@ -21,7 +22,7 @@ function Countries() {
               <Card
                 name={country.name}
                 img={country.flag}
-                population={country.population}
+                population={numberWithCommas(country.population)}
               />
             ))}
         </div>
