@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-info justify-content-between">
+    <nav className="navbar navbar-expand-lg bg-info justify-content-between fixed-top">
       <div className="container">
         <div>
-          <Link to="/" className="text-white">
-            LOGO
+          <Link to="/" className="nav-link text-white">
+            COUNTRIES API
           </Link>
         </div>
         <ul className="navbar-nav me-auto">

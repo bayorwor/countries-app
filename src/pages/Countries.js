@@ -11,7 +11,7 @@ function Countries() {
   return (
     <section>
       <div className="container">
-        <div>
+        <div className="m-5 border-bottom bg-transparent">
           <h1>List Of countries</h1>
         </div>
         <div className="row text-center">

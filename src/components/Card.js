@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 function Card({ name, img, population }) {
   return (
-    <div className="card m-3">
+    <div
+      className="card m-3 shadow-lg"
+      style={{ height: "18rem", width: "18rem" }}
+    >
       <img
         src={img}
         alt=""

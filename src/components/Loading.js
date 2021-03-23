@@ -2,10 +2,12 @@ import React from "react";
 
 function Loading() {
   return (
-    <div
-      className="spinner-grow text-warning"
-      style={{ height: 50, width: 50 }}
-    ></div>
+    <section className="loading">
+      <div
+        className="spinner-border text-info"
+        style={{ height: 150, width: 150 }}
+      ></div>
+    </section>
   );
 }
 
