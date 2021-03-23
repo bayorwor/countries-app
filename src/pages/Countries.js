@@ -1,5 +1,7 @@
 import useCountries from "../hooks/useCountries";
 import Card from "../components/Card";
+import Loading from "../components/Loading";
+import Error from "../components/Error";
 
 function Countries() {
   const url = "https://restcountries.eu/rest/v2/all";
@@ -7,20 +9,22 @@ function Countries() {
 
   return (
     <section>
-      <div>
-        <h1>List Of countries</h1>
-      </div>
-      <div className="row">
-        {isPending && <div>loading</div>}
-        {error && <div>oops!! something went wrong</div>}
-        {countries &&
-          countries.map((country) => (
-            <Card
-              name={country.name}
-              img={country.flag}
-              population={country.population}
-            />
-          ))}
+      <div className="container">
+        <div>
+          <h1>List Of countries</h1>
+        </div>
+        <div className="row text-center">
+          {isPending && <Loading />}
+          {error && <Error />}
+          {countries &&
+            countries.map((country) => (
+              <Card
+                name={country.name}
+                img={country.flag}
+                population={country.population}
+              />
+            ))}
+        </div>
       </div>
     </section>
   );

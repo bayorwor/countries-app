@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 function Card({ name, img, population }) {
   return (
-    <div className="card m-5">
+    <div className="card m-3">
       <img
         src={img}
         alt=""
@@ -8,8 +9,10 @@ function Card({ name, img, population }) {
         style={{ height: "10rem", width: "18rem" }}
       />
       <div className="card-body">
-        <h4>{name}</h4>
-        <h5>{population}</h5>
+        <Link to={`/details/${name}`}>
+          <h4>{name}</h4>
+          <h5>{population}</h5>
+        </Link>
       </div>
     </div>
   );
