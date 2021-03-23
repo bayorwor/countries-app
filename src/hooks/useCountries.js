@@ -13,7 +13,7 @@ function useCountries(url) {
       setIsPending(false);
     };
     fetchCountry();
-  }, []);
+  }, [url]);
   return {
     countries,
     isPending,
