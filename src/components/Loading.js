@@ -1,12 +1,9 @@
 import React from "react";
-
+import { PushSpinner } from "react-spinners-kit";
 function Loading() {
   return (
     <section className="loading">
-      <div
-        className="spinner-border text-info"
-        style={{ height: 150, width: 150 }}
-      ></div>
+      <PushSpinner size={50} color="green" />
     </section>
   );
 }

@@ -9,9 +9,9 @@ function Countries() {
   const { countries, isPending, error } = useCountries(url);
 
   return (
-    <section>
+    <section className="mt-5">
       <div className="container">
-        <div className="m-5 border-bottom bg-transparent">
+        <div className="m-5 border-bottom bg-transparent text-center">
           <h1>List Of countries</h1>
         </div>
         <div className="row text-center">
