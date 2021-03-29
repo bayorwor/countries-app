@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-info justify-content-between fixed-top mb-5">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between fixed-top mb-5">
       <div className="container">
         <div>
           <Link to="/" className="nav-link text-white">

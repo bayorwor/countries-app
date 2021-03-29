@@ -3,7 +3,7 @@ import truncate from "../utils/truncate";
 function Card({ name, img, population }) {
   return (
     <div
-      className="card m-3 shadow-lg"
+      className="card border-primary m-3 shadow"
       style={{ height: "18rem", width: "18rem" }}
     >
       <img
@@ -13,7 +13,7 @@ function Card({ name, img, population }) {
         style={{ height: "10rem", width: "18rem" }}
       />
       <div className="card-body">
-        <Link to={`/details/${name}`} className="nav-link text-info">
+        <Link to={`/details/${name}`} className="nav-link text-white">
           <h4 className="border-bottom">{truncate(name)}</h4>
           <h5>{population}</h5>
         </Link>
