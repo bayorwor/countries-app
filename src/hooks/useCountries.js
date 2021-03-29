@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 
 function useCountries(url) {
   const [countries, setCountries] = useState();
@@ -8,8 +7,7 @@ function useCountries(url) {
 
   useEffect(() => {
     const fetchCountry = async () => {
-      const data = await axios
-        .get(url)
+      const data = await fetch(url)
         .then((res) => res.json())
         .catch((err) => setError(err));
       setCountries(data);
