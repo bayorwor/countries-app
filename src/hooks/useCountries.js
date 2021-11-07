@@ -14,7 +14,6 @@ function useCountries(url) {
       setIsPending(false);
     };
     fetchCountry();
-    console.log(countries)
   }, [url]);
   return {
     countries,

@@ -8,6 +8,8 @@ function Countries() {
   const url = "https://restcountries.com/v3.1/all";
   const { countries, isPending, error } = useCountries(url);
 
+  console.log(countries);
+
   return (
     <section className="mt-5">
       <div className="container">
