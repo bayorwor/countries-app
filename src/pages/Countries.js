@@ -21,7 +21,7 @@ function Countries() {
             countries.map((country) => (
               <Card
                 name={country.name.common}
-                img={country.flag}
+                img={country.flags.svg}
                 population={numberWithCommas(country.population)}
               />
             ))}
