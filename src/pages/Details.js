@@ -7,7 +7,7 @@ function Details({ match }) {
   const name = match.params.name;
 
   const { error, isPending, countries } = useCountries(
-    `https://restcountries.eu/rest/v2/name/${name}`
+    `https://restcountries.com/v3.1/name/${name}`
   );
 
   return (
