@@ -5,7 +5,7 @@ import Error from "../components/Error";
 import { numberWithCommas } from "../utils/numbersComma";
 
 function Countries() {
-  const url = "https://restcountries.eu/rest/v2/all";
+  const url = "https://restcountries.com/v3.1/all";
   const { countries, isPending, error } = useCountries(url);
 
   return (
