@@ -22,12 +22,12 @@ function Details({ match }) {
           countries.map((country, index) => (
             <div className="row" key={index}>
               <img
-                src={country.flag}
+                src={country.flags.svg}
                 style={{ height: 300, width: "auto" }}
-                alt={country.name}
+                alt={country.name.common}
               />
               <div className="m-2 p-3 card text-muted">
-                <h2 className="mb-3 text-info">country : {country.name}</h2>
+                <h2 className="mb-3 text-info">country : {country.name.common}</h2>
                 <h2>Region : {country.region}</h2>
                 <h3>Sub_region : {country.subregion}</h3>
                 <h2 className="mb-3 text-warning">
