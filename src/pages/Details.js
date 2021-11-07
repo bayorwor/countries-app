@@ -34,11 +34,7 @@ function Details({ match }) {
                   Pops : {numberWithCommas(country.population)}
                 </h2>
                 <h2>Capital city : {country.capital}</h2>
-                {country.currencies.map((cur) => (
-                  <span>
-                    {cur.symbol}-{cur.name}
-                  </span>
-                ))}
+                <h2>Start of Weeks : {country.startOfWeek}</h2>
               </div>
             </div>
           ))}
