@@ -8,8 +8,6 @@ function Countries() {
   const url = "https://restcountries.com/v3.1/all";
   const { countries, isPending, error } = useCountries(url);
 
-  console.log(countries);
-
   return (
     <section className="mt-5">
       <div className="container">
@@ -22,7 +20,7 @@ function Countries() {
           {countries &&
             countries.map((country) => (
               <Card
-                name={country.name}
+                name={country.name.common}
                 img={country.flag}
                 population={numberWithCommas(country.population)}
               />
